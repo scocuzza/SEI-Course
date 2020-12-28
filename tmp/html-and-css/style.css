@@ -1,0 +1,11 @@
+body {
+    background: hotpink;
+}
+
+img {
+    height: 300px;
+    background-color: lime;
+    padding: 30px;
+    border: 5px solid white;
+    margin: 50px; 
+}

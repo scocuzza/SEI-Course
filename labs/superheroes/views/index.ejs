@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superheroes</title>
+</head>
+<body>
+  <h1>All Superheroes</h1>
+  <ul>
+    <% superheroes.forEach((superhero, index) => { %>
+      <li>
+        <a href="/superheroes/<%= index %>">
+          <%= superhero.name %>
+        </a>
+      </li>
+    <% }) %>
+  </ul>
+
+    <h1>All Villains</h1>
+    <ul>
+      <% villains.forEach((villain, index) => { %>
+      <li>
+        <a href="/villains/<%= index %>">
+          <%= villain.name %>
+        </a>
+      </li>
+      <% }) %>
+    </ul>
+</body>
+</html>
